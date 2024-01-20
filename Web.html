@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>HTML Excercise</title>
-       <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-       </style>  
-    </head>
-    <body>
-        <font size="4">
-            <h1><b>U</b></h1>
 
-            <header>
-                <h2>Link</h2>
-                <li><a href="https://www.wikipedia.org/">Home</a></li>
-                <li><a href="https://www.ucas.com/">About Us</a></li>
-                <li><a href="https://www.ucas.com/">Contact</a></li>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity v0.2</title>
+</head>
 
+<body style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.6;">
+
+    <header>
+        <h1 style="font-size: 2em;">Activity 0.2</h1>
+        <nav>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: inline; margin-right: 20px;"><a href="#">Home</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#">About Us</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="margin: 20px;">
+
+        <section style="margin-bottom: 40px;">
             <h2>Image</h2>
-            <img src="img/a.png" alt="MEME">
-            <hr>
-            <h2>Login</h2>  
-            <form>
-                Username: <input type="text" user="username"/><br>
-                Password: <input type="text" pass="password"/><br>
-                <p>
-                    <input type="radio" name="gender" value="male"> Male
-                   <input type="radio" name="gender" value="female"> Female
+            <figure>
+                <img src="img/xero-code.gif" alt="MEME" style="max-width: 300px; height: auto;">
+                <figcaption>A student who is doing his Lab Activity</figcaption>
+            </figure>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h2>Login</h2>
+            <form style="max-width: 400px;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="3"
+                    style="width: 100%; padding: 8px; margin-bottom: 16px;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6"
+                    style="width: 100%; padding: 8px; margin-bottom: 16px;">
+                <p style="margin-bottom: 16px;">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
                 </p>
-                <p><input type="checkbox" name="Accept Terms" value="Accept Terms"> Accept Terms and Condition</p>
+                <p style="margin-bottom: 16px;">
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                    <label for="acceptTerms">Accept Terms and Conditions</label>
+                </p>
                 <p><input type="submit" value="Submit"></p>
             </form>
-            
-            <hr>
-            <h2>Table</h2>
-            <table>
-                <tr>
-                    <td>Name</td>
-                    <td>Age</td>
-                    <td>City</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                    <td>New York</td>
-                </tr>
-                <tr>
-                    <td>Jane</td>
-                    <td>30</td>
-                    <td>Los Angeles</td>
-                </tr>
-            </table>
+        </section>
 
-            <h2>Click to play audio and Video</h2>
-            <audio controls>
+        <section style="margin-bottom: 40px;">
+            <h2>Table</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Age</th>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">John</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">25</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">New York</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Jane</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">30</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Los Angeles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="margin-bottom: 40px;">
+            <h2>Media</h2>
+            <audio controls style="margin-top: 16px;">
                 <source src="music/telugu-shopping-mall-humming-telugu-mp3-61557.mp3">
             </audio>
-           <video controls>
-            <source src="./vid/pexels_videos_1072815 (1080p).mp4">
-           </video>
+            <video controls style="margin-top: 16px;">
+                <source src="./vid/pexels_videos_1072815 (1080p).mp4">
+            </video>
+        </section>
 
+    </main>
 
-        </font>
-    </body>
+</body>
 
 </html>
