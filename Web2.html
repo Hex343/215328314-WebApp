@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excercise V1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="path/to/external/javascript.js" defer></script>
 </head>
 
 <body style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.6;">
 
     <header>
-        <h1 style="font-size: 2em;">Excercise V1</h1>
+        <h1 style="font-size: 2em;">Excercise V2</h1>
         <nav>
             <ul style="list-style: none; padding: 0;">
-                <li style="display: inline; margin-right: 20px;"><a href="#">Home</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#">About Us</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#">Contact</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#nav">Home</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#image">Image</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#login">Login</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#table">Table</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#media">Media</a></li>
             </ul>
         </nav>
     </header>
 
     <main style="margin: 20px;">
 
-        <section style="margin-bottom: 40px;">
+        <section id="image" style="margin-bottom: 40px;">
             <h2>Image</h2>
             <figure>
                 <img src="img/xero-code.gif" alt="MEME" style="max-width: 300px; height: auto;">
@@ -30,7 +34,7 @@
             </figure>
         </section>
 
-        <section style="margin-bottom: 40px;">
+        <section id="login" style="margin-bottom: 40px;">
             <h2>Login</h2>
             <form style="max-width: 400px;">
                 <label for="username">Username:</label>
@@ -40,7 +44,7 @@
                 <input type="password" id="password" name="password" required minlength="6"
                     style="width: 100%; padding: 8px; margin-bottom: 16px;">
                 <p style="margin-bottom: 16px;">
-                    <label for="gender">Gender:</label>
+                    <label>Gender:</label>
                     <input type="radio" id="male" name="gender" value="male"> Male
                     <input type="radio" id="female" name="gender" value="female"> Female
                 </p>
@@ -52,7 +56,7 @@
             </form>
         </section>
 
-        <section style="margin-bottom: 40px;">
+        <section id="table" style="margin-bottom: 40px;">
             <h2>Table</h2>
             <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
                 <thead>
@@ -77,17 +81,25 @@
             </table>
         </section>
 
-        <section style="margin-bottom: 40px;">
+        <section id="media" style="margin-bottom: 40px;">
             <h2>Media</h2>
             <audio controls style="margin-top: 16px;">
                 <source src="music/telugu-shopping-mall-humming-telugu-mp3-61557.mp3">
             </audio>
-            <video controls style="margin-top: 16px;" width="300" height="300">
+            <video controls style="margin-top: 10px;" width="400" height="400">
                 <source src="vid/121.mp4">
             </video>
         </section>
 
     </main>
+
+    <footer>
+        <p>External Resources:</p>
+        <ul>
+            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+        </ul>
+    </footer>
 
 </body>
 
