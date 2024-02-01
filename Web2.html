@@ -4,51 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excercise V1</title>
+    <title>Exercise V2</title>
+    
     <link rel="stylesheet" href="style.css">
     <script src="path/to/external/javascript.js" defer></script>
 </head>
 
-<body style="font-family: 'Arial', sans-serif; font-size: 16px; line-height: 1.6;">
+<body>
 
     <header>
-        <h1 style="font-size: 2em;">Excercise V2</h1>
+        <h1>Exercise V2</h1>
+        
         <nav>
-            <ul style="list-style: none; padding: 0;">
-                <li style="display: inline; margin-right: 20px;"><a href="#nav">Home</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#image">Image</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#login">Login</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#table">Table</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#media">Media</a></li>
+            <ul>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#google-maps">Map</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="margin: 20px;">
+    <main>
 
-        <section id="image" style="margin-bottom: 40px;">
+        <section id="image">
             <h2>Image</h2>
             <figure>
-                <img src="img/xero-code.gif" alt="MEME" style="max-width: 300px; height: auto;">
+                <img src="img/xero-code.gif" alt="MEME">
                 <figcaption>A student who is doing his Lab Activity</figcaption>
             </figure>
         </section>
 
-        <section id="login" style="margin-bottom: 40px;">
+        <section id="login">
             <h2>Login</h2>
-            <form style="max-width: 400px;">
+            <form>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required minlength="3"
-                    style="width: 100%; padding: 8px; margin-bottom: 16px;">
+                <input type="text" id="username" name="username" required minlength="3">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required minlength="6"
-                    style="width: 100%; padding: 8px; margin-bottom: 16px;">
-                <p style="margin-bottom: 16px;">
+                <input type="password" id="password" name="password" required minlength="6">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="18" max="100">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <label for="zipcode">Zip Code:</label>
+                <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required>
+                <p>
                     <label>Gender:</label>
                     <input type="radio" id="male" name="gender" value="male"> Male
                     <input type="radio" id="female" name="gender" value="female"> Female
                 </p>
-                <p style="margin-bottom: 16px;">
+                <p>
                     <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
                     <label for="acceptTerms">Accept Terms and Conditions</label>
                 </p>
@@ -56,39 +64,49 @@
             </form>
         </section>
 
-        <section id="table" style="margin-bottom: 40px;">
+        <section id="table">
             <h2>Table</h2>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+            <table>
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Age</th>
-                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">City</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">John</td>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">25</td>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">New York</td>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Jane</td>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">30</td>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Los Angeles</td>
+                        <td>Jane</td>
+                        <td>30</td>
+                        <td>Los Angeles</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="media" style="margin-bottom: 40px;">
+        <section id="media">
             <h2>Media</h2>
-            <audio controls style="margin-top: 16px;">
+            <audio controls>
                 <source src="music/telugu-shopping-mall-humming-telugu-mp3-61557.mp3">
             </audio>
-            <video controls style="margin-top: 10px;" width="400" height="400">
+            <video controls width="400" height="400">
                 <source src="vid/121.mp4">
             </video>
+        </section>
+
+        <section id="google-maps">
+            <h2>Google Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1247.7632659794017!2d120.56461652920041!3d16.409361105049288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33922f829ff2bc1b%3A0x32d8584e91507584!2sSM%20City%20Baguio!5e0!3m2!1sen!2sph!4v1643704373543!5m2!1sen!2sph" width="600" height="450" allowfullscreen></iframe>
+        </section>
+
+        <section id="social-media">
+            <h2>Social Media Widget</h2>
+           
         </section>
 
     </main>
