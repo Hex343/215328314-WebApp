@@ -1,0 +1,28 @@
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    line-height: 110%;
+    margin-left: 30px;
+    background-color: ;
+}
+
+.intro {
+    color: rgb(15, 36, 150);
+    font-size: 75%;
+    margin-left: 50px;
+}
+
+.list1 {
+    color: crimson;
+    font: 1em sans-serif;
+    font-size: 75%;
+    padding: 5%;
+}
+
+.copyright {
+    font-size: 75%;
+    color: darkgreen;
+    padding: 20px;
+}
+
