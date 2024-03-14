@@ -7,6 +7,10 @@ header {
     background-color: ;
 }
 
+h2 {
+    color: chartreuse;
+}
+
 .intro {
     color: rgb(15, 36, 150);
     font-size: 75%;
