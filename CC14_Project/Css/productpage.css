@@ -1,0 +1,59 @@
+/* Product Landing Page styles */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #header-img {
+    max-width: 200px;
+  }
+  
+  #nav-bar {
+    margin-top: 20px;
+  }
+  
+  #nav-bar .nav-link {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #nav-bar .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
