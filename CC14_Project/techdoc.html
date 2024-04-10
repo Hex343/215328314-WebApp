@@ -1,127 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="Css/tech.css">
+  <meta charset="UTF-8">
+  <title>HTML Technical Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/tech.css">
+
+  
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>The Importance of Network Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#D1">What is network documentation?</a></li>
-            <li><a class="nav-link" href="#D2">Why network documentation is important</a></li>
-            <li><a class="nav-link" href="#D3">Key benefits of network documentation</a></li>
-            <li><a class="nav-link" href="#D4">How do you share network documentation?</a></li>
-            <li><a class="nav-link" href="#D5">Items you should document</a></li>
-        </ul>
-    </nav>
 
-    <main id="main-doc">
-        <section id="Introduction" class="main-section">
-            <header><b>Introduction</b></header>
-            <p>The importance of network documentation becomes very clear when you have to sit down and troubleshoot a network from top to bottom. Or when there’s a changing of the guard at your company. New management wants to see what you’re doing with your network. Or new IT staff need to be brought up to speed quickly.
+  </script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+<!--- disabled --->
 
-                It could be time for an audit, and you’re left scrambling for documentation, or leadership is embarking on future planning and they’re asking for detailed reporting on the current growth of the network. In these kinds of situations, any shred of network documentation is like found gold.</p>
-        </section>
+<nav id="navbar">
+	<header>CC14 Web Application Development</header>
+	<a href="#introduction" class="nav-link">Introduction</a>
+	<a href="#elements" class="nav-link">Elements</a>
+	<a href="#Github and Vs Code" class="nav-link">Github and Vs Code</a>
+	<a href="#CSS Basic Styling" class="nav-link">CSS Basic Styling</a>
+	<a href="#WSL and Apache2" class="nav-link">WSL and Apache2</a>
+	<a href="#Install Wsl and Apache2" class="nav-link">Install Wsl and Apache2</a>
+	<a href="#summary" class="nav-link">Summary</a>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <article>
+      <ul>
+        <li>Elements</li>
+        <li>Github and Vs Cod</li>
+        <li>CSS Basic Styling</li>
+        <li>WSL and Apache2</li>
+        <li>Install Wsl and Apache2</li>
+      </ul>
+      <p><strong>HTML(Hyper Text Markup Language)</strong> is the
+        standard language for creting web-pages. Every web page you surf on
+        your browser is built using HTML. The primary use of HTML is to
+        provide a proper structure to the web page so all the content or
+        data of the page could represent adequately. A stand-alone HTML can
+        create only static and skeleton looking black and white pages, but
+        with the help of CSS and Javascript,we can create a more interactive
+        and intuitive web page. When we try to visit a website or click on
+        the link, we basically request the server to show us the page, then
+        the server acts on our request and sends us the appropriate HTML
+        document as a response. Then this HTML document parsed by browse,
+        and we are able to see the content.</p>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="elements">
+    <header>Elements</header>
+    <article>
+      <p>Is a unit of content in an HTML
+        document formed by HTML tags and the text or media it contains.</p>
+          <li>
+            <strong>The Opening Tag:</strong> The element name used to start
+            an HTML element. The tag type is surrounded by opening and closing
+            angle brackets
+          </li>
+          <li>
+            <strong>The Content:</strong> The information (text or other
+            elements) contained between the opening and closing tags of an
+            HTML element.
+          </li>
 
-        <section id="D1" class="main-section">
-            <header><b>What is network documentation?</b></header>
-            <p class="p1">Network documentation is the written charts, drawings, records, and instructions of networking procedures, layouts, and information on your l installed production network. It’s not the technical documentation from a vendor on how a specific product works or how it’s installed.
+          <li>
+            <strong>The Closing Tag:</strong> The second HTML tag used to end
+            an HTML element. Closing tags have a forward slash (/) inside of
+            them, directly after the left angle bracket.
+          </li>
+          <p>
+            <strong>In HTML Formatting</strong> we have many special elements
+            that can provide special meaning to text content. The HTML elements
+            provide the semantic meaning to the web-page content. We usually
+            interchangeably use the term HTML elements and tags, but technically
+            both are different. An HTML tag is just a character inside the
+            angled brackets. Whereas the HTML element is a collection of
+            starting tag, its attribute, content and end tag.
+          </p>
+      <div class="code-box">
+        <code>
+            &#60;b&#62; = Bold the text<br />
+            &#60;strong&#62; = An alternative for &#60;b&#62; which tell that
+            this text is essential.<br />
+            &#60;i&#62; = italic the text<br />
+            &#60;em&#62; = Similar to italic but used when you want to emphasize
+            the text.<br />
+            &#60;mark&#62; = It marks the text with a default 'yellow'
+            background colour <br />
+            &#60;small&#62; = Decrease the text size <br />
+            &#60;del&#62; = It prints a cross line over text <br />
+            &#60;ins&#62; = Represents the inserted text by putting an underline
+            <br />
+            &#60;sub&#62; = This element is used to display the subscript <br />
+            &#60;sup&#62; = It can make a text superscript <br />
+        </code>
+      </div>
+      <p>This is the Basic Code for starting a HTML Code</p>
+      <div class="code-box">
+        <code>
+            &#60!DOCTYPE html&#62
+            <br>
+            &#60html&#62
+            <br>
+            &#60head&#62
+            <br>
+            &#60title&#62Page Title&#60&#47;title&#62
+            <br>
+            &#60&#47head&#62 <br>
+            &#60body&#62 <br>
+            <br>
+            &#60h1&#62This is a Heading&#60&#47;h1&#62 <br>
+            &#60p&#62This is a paragraph&#60&#47;p&#62 <br>
+            <br>
+            &#60&#47;body&#62 <br>
+            &#60&#47;html&#62 <br>
+        </code>
+      </div>
+      <div class="note">
+        <p><b>Note: </b>Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. For example, a &lt;title&gt; tag could be written as &lt;title&gt;, &lt;TITLE&gt;, &lt;Title&gt;, &lt;TiTlE&gt;, etc., and it will work fine. Best practice, however, is to write all tags in lowercase for consistency, readability, and other reasons.</p>
+      </div>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Github and Vs Code">
+    <header>Github and Vs Code</header>
+    <article>
+      <p>Git Commands </p>
+      <div class="code-box">
+        <code>
+            git add . <br>
+            git commit -m "Comment"<br>
+            git push <br>
+            git status -v <br>
+          </code>
+        </div>
+      <p><strong>Visual Studio code</strong> Keyboard shortcuts</p>
+      <ol>
+        <li><strong>Command+Shift+P=</strong> Show Pallete</li>
+            <li><strong>Ctrl+Shift+N=</strong> New window/instance</li>
+            <li><strong>Ctrl+C=</strong> Copy line (empty selection)</li>
+            <li><strong>Ctrl+X=</strong> Cut the line</li>
+            <li><strong>Ctrl+\ =</strong> Split editor</li>
+            <li><strong>Ctrl+Shift+`=</strong> Create new terminal</li>
+            <li><strong>Ctrl+`=</strong> Show integrated terminal</li>
+            <li><strong>Ctrl+V=</strong> Paste into active terminal</li>
+            <li><strong>Ctrl+↑ / ↓=</strong> Scroll up/down</li>
+            <li><strong>Shift+Alt+F =</strong> Format document</li>
+      </ol>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="CSS Basic Styling">
+    <header>CSS Basic Styling</header>
+    <article>
+      <p>Create or modify existing HTML page with elements like:</p>
+      <ol>
+        <li>Headings</li>
+        <div class="code-box">
+            <code>
+                .header { <br>
+                    padding: 60px; <br>
+                    text-align: center; <br>
+                    background: #1abc9c; <br>
+                    color: white; <br>
+                    font-size: 30px; <br>
+                  } <br>
+                    </code>
+          </div>
+        <li>Paragraphs</li>
+        <div class="code-box">
+            <code>
+                body { <br>
+                    background-color: lightgrey; <br>
+                    color: blue; <br>
+                  } <br>
+                  
+                  h1 { <br>
+                    background-color: black; <br>
+                    color: white; <br>
+                  } <br>
+                  
+                  div { <br>
+                    background-color: blue; <br>
+                    color: white; <br>
+                  } <br>
+                    </code>
+          </div>
+        <li>Lists</li>
+        <div class="code-box">
+            <code>
+                ul.a { <br>
+                    list-style-type: circle; <br>
+                  } <br>
+                  
+                  ul.b { <br>
+                    list-style-type: square; <br>
+                  } <br>
+                  
+                  ol.c { <br>
+                    list-style-type: upper-roman; <br>
+                  } <br>
+                  
+                  ol.d { <br>
+                    list-style-type: lower-alpha; <br>
+                  } <br>
+                    </code>
+          </div>
+      </ol>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="WSL and Apache2">
+    <header>WSL and Apache2</header>
+    <article>
+      <p>Numerical computing tools are used to solve complex engineering problems in the field of fluid simulations, electromagnetics and thermal analysis. However developing good solvers is computationally expensive. By using Ubuntu on WSL, developers can share the same code for local testing as they use for cluster deployment, increasing efficiency and iteration time.</p>
+      <p>The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.</p>
+      <div class="note">
+        <p><b>Note: </b>You can also use Ngrok and Apache2 in a smartphone by installing Termux in your device works on non root and rooted. Here's the link for Termux. <a href="https://termux.dev/en/" target="_blank">Download Termux Here</a></p>
+      </div>
+    </article>
+  </section>
+  <hr>
+  <section class="main-section" id="Install Wsl and Apache2">
+    <header>Install Wsl and Apache2</header>
+    <article>
+      <p>To install Wsl go to either powershell or Command Prompt. You can also install it in microsoft stor.</p>
+      <div class="code-box">
+        <code>
+          <p>In Powershell Type the following:</p>
+          <p>wsl --install</p>
+        </code>
+      </div>
+      <p>After Installing Wsl you can now proceed to install Apache2 in your linux subsytem type the following below:</p>
+      <div class="code-box">
+        <code>
+          <p>sudo apt-get update -y</p>
+          <p>sudo apt-get install apache2 -y</p>
+          <br>
+          <p class="html-comment">After installing you can now check if it is running or not by typing:</p>
+          <p>sudo sytemctl status apache2</p>
+          <p>sudo systmctl start apache2</p>
+        </code>
+      </div>
+    </article>
+  <section>
+  <hr>
+  <section class="main-section" id="summary">
+    <header>Summary</header>
+    <article>
+      <p>Well This is the end of the page. I didnt add all the topics that I learned but still I,m gratefull to your teachings Sir. I may not have learned a lot but it was fun having you as our instructor Keep it up the good Work sir.</p>
+      <div class="note">
+        <p><b>Note: </b><a href="index.html">You can Click this to go to my Portfolio</p>
+      </div>
+    </article>
+  </section>
+</main>
+  
+  
 
-                Good network documentation is vital to a smooth-running organization. Getting it right can mean the difference between a network with minimal errors and downtime, and a network that costs someone their job.
-                
-                Many times, you think of documentation in a traditional centralized organization with giant three-ring binders. And you may have some of this. But effective documentation is going to typically consist of two buckets — “how it is” and “how to do it”:</p>
-                <li class="li1">Your first general grouping will be documentation that consists of instructions on how a network is set up and how it works, such as a <a href="https://wiki.en.it-processmaps.com/index.php/Knowledge_Management">knowledge management</a> database defined in ITIL.</li>
-                <li class="li1">The second group can be seen as your “how-tos”, often referred to as standard operating procedures (SOPs) or processes. These are detailed plans or procedures for day-to-day operation and maintenance, best practices, and FAQs—what’s unique and tricks you’ve learned along the way.</li>
-                <p class="p1">You should also have documentation that shows your IP address scheme and IP address allocation plan with subnets, used addresses, and available addresses. For some businesses, this may be as simple as a spreadsheet, while for others a full IP address management (IPAM) system is implemented. A good network engineer is going to be managing IP addresses on a regular basis.
-
-                    Another area to document is a physical representation of how your server racks are laid out, with details such as server names, models, sizes, and connectivity.
-                    
-                    As well, a good cloud architecture diagram will help you understand how to connect to your cloud services and how traffic flows in and out.
-                    
-                    You’ll also need a cabling diagram to understand how cables are built out in your network. What kind of cables? Where do they enter and leave? Connectors and specifications?
-                    
-                    All of this documentation feeds into a good disaster recovery plan. What do you do if there’s a disaster? How do you recover from it quickly? Assume there’s no one left from the original team. How would the replacement team handle it?</p>
-        </section>
-
-        <section id="D2" class="main-section">
-            <header><b>Why network documentation is important</b></header>
-            <p class="p1">Imagine this scenario: You’re a network engineer new to a company, and after a series of issues, the decision has been made in your organization to drop some serious budget on a major upgrade to your infrastructure (recommended, of course, by your hardware vendor).
-
-                As part of your due diligence, you ask for documentation: network drawings, inventory, and anything else that could help determine if this was the right solution. Lo and behold, you discover there’s no real documentation. Those making the decisions, and the vendors, are new to working with the company, and this is an inherited problem.
-                
-                These situations occur all the time. The previous network admin may not have documented much of anything, and now you’re stuck trying to fix the problems. Without documentation, you’re at the mercy of any third party who wants to sell as much stuff as possible to the customer.
-                
-                In this scenario, you end up creating some pieces of documentation for the organization based on the rough sketches and network inventory you’ve done in the little time you’ve had. (Pro tip: as a network engineer or network admin, make sure you are taking notes consistently. This is the beginning of good documentation.) While your documentation isn’t 100% complete, it’s enough to get the message across to management that you don’t need to spend all this money on new equipment.
-                
-                Moral of the story: Without detailed network documentation, there’s a potential to waste a lot of money.</p>
-        </section>
-
-        <section id="D3" class="main-section">
-            <header><b>Key benefits of network documentation</b></header>
-            <p class="p1">Let’s look at the key benefits of network documentation so we can understand why it’s so important. Never sell this function short. It should be considered part of a network engineer’s job from day one.</p>
-            <ul><b>Visualization</b>
-                <li class="li2">Keeping a good set of network documents with diagrams of server racks, architecture, and topology gives you network visibility so you can see what’s happening on your network, understand traffic flows, and see bottlenecks.</li>
-            </ul>
-            <ul><b>Troubleshooting</b>
-                <li class="li2">Troubleshooting a network problem without good documentation is like shooting in the dark. You have to know what you have, where you’re going, and where you’ve been to properly troubleshoot your network. Documentation does this for you. When you’re in a problem situation and you need to resolve it fast, good documentation is going to help. Uptime on your network depends on this.
-
-                    Think of the last time you had a performance issue on your network and couldn’t figure it out. And how easy it is to miss little details along the way. The ability to see and visualize these traffic flows is invaluable.</li>
-            </ul>
-            <ul><b>Standard operating procedures</b>
-            <li class="li2">Documentation is one of the critical elements to success with process and procedure. You can’t <a href="https://www.auvik.com/franklyit/podcast/008/">maintain SOPs—</a>the goal being to keep processes consistent, effective, and efficient—without good documentation. Everyone will do something in a slightly different way. If you don’t follow good documentation, your procedures (and possibly your outcomes) will be different every time. The goal is to create success, document it, and then be able to recreate it consistently every time.</li>
-        </ul>
-        <ul><b>Budgeting and forecasting</b>
-        <li class="li2">Networking and network technology planning require the purchase of software, equipment, servers, and services. These are expensive technologies that are required to be planned and budgeted for in advance. These plans need to be justified to management. Without good network documentation, you’re just guessing.</li>
-        </ul>
-        <ul><b>Saving money</b>
-        <li class="li2">Your resources are scarce, and the best use of them is going to rely on keeping detailed network documentation. This isn’t a process that should be left to chance. The leaner you need to run, the more you’ll need to save money. And that relies on good documentation.</li>
-        </ul>
-        </section>
-
-        <section id="D4" class="main-section">
-            <header><b>How do you share network documentation</b>?</header>
-            <p class="p2">The entire purpose of detailed network documentation is to share this information effectively throughout your organization. At the same time, we need to have an eye on security and not share valuable information with the wrong people.
-
-                The process of sharing network documentation starts with assigning responsibility to the person who generates it. There should be a simple policy rule that says after each networking project, no matter how small, it’s not done until it has been documented and updates are made. Then this finalized documentation should be centrally published to the authorized parties so they can incorporate it into their production activities.
-                
-                Time should be given to accomplish this critical part of the task at hand. Encourage network engineers and technicians to take careful notes on meetings and whiteboard sessions and turn them into drawings for project plans. Then, share with team members to ensure they are accurate. Go through implementation using the documentation as a work in progress. And as the final step, update to make the latest changes.
-                
-                When all this is done, documentation should be shared only with individuals within the organization that need to know, not published on public forums or any public-facing resource. Documentation can be shared with vendors on an as-needed basis but not distributed to them in hard copy or electronically.</p>
-        </section>
-
-        <section id="D5" class="main-section">
-            <header><b>Items you should document</b></header>
-            <ul><b>Server rack diagram</b>
-            <li class="li2" server racks should be completely documented so you always have an accurate picture of the data center, as most of the time you won’t be there. Make sure you have all components including <a href="https://www.auvik.com/franklyit/blog/electricity-basics-network-administrator/">power strips</a> and monitors. You should know exactly how you connect to the server rack.</li>
-            </ul>
-            <ul><b>Cloud architecture diagram</b>
-                <li class="li2">This diagram will show you where you connect to your cloud services and how. You should show all connections and speeds. Remember, compliance and security should always be top of mind. Documentation of your cloud architecture will help with this.</li>
-                </ul>
-                <ul><b>Network topology</b>
-                    <li class="li2">Your network topology is the fundamental building block of all network architecture tasks. It’s the one you start with, and it’s the one that you’ll build your other documentation components with. This will be your master plan. Its function is to allow you to <a href="https://www.auvik.com/franklyit/blog/network-topology-visualization/">visualize exactly how your network is set up</a>. Once this is complete, it may show you things you weren’t aware of.</li>
-                    </ul>
-                    <ul><b>IP address allocation</b>
-                        <li class="li2">IP addresses are a critical resource for a network engineer and shouldn’t be left on a single spreadsheet on one person’s laptop. It needs to be an active, clean table of information that releases old, ghosted addresses and keeps these addresses ready for use. Taking into account subnets, subnet sizes, and dynamic address allocation. All of these functions allow for effective network planning.</li>
-                        </ul>
-                        <ul><b>Recovery plan</b>
-                        <li class="li2">The recovery plan is the responsibility of every IT and networking manager. It should also be an active part of the everyday activities of the networking engineer. These questions should always be top of mind, “What if that technician or this engineer was not here tomorrow? What would I do? How would a replacement do their job? How are backups done? How are they used? How are they restored? Has it been tested?” This extends all the way to the point of having lost all your personnel or your facility. How would you recreate a working production network again? All these documentation components feed into this recovery plan.
-
-                            Keeping detailed network documentation is very important. The fact is many companies don’t do it or don’t do it effectively. Its importance usually becomes very apparent when there’s a serious problem, or when there’s a loss of personnel.
-                            
-                            Start your documentation today. Build network documentation planning into your process and procedures. Plan for it now. Get your team together and on the same page. Start with your network topology. Make sure notes are being taken at network planning meetings, whiteboards are being recorded. Then incorporate documentation into the planning and the implementation process.
-                            
-                            And finally, have a policy that states a project is not finished until the documentation is finished and approved. You will hold on to this documentation tightly after it is done and be happy you have it.</li>
-                        </ul>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

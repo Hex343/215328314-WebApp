@@ -1,0 +1,118 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+      margin: 0;
+      padding: 0;
+    background-color: #838787;
+    
+  }
+  /* Navigation bar */
+  
+  #navbar {
+      position: fixed;
+    font-weight: 600;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: scroll;
+    background-color: #15c6bd;
+  }
+  
+  #navbar header {
+      padding: 1rem 1rem 1rem 1rem;
+      color: white;
+      font-size: 1.5em;
+  }
+  
+  .nav-link {
+      display: block;
+    margin-top: 1rem;
+      padding: 1rem;
+      overflow-y: scroll;
+      letter-spacing: 1px;
+      color: white;
+      text-decoration: none;
+      position: relative;
+    outline: 0;
+  }
+  
+  /* main */
+  
+  #main-doc {
+      padding: 0;
+      float: right;
+      width: 75%;
+      margin-right:2em;
+  }
+  
+  header {
+      font-size: 2em;
+    color: #000000;
+    padding-top: 1rem;
+  }
+  
+  li {
+    padding: 0.7rem;
+  }
+  
+  hr {
+      margin: 4rem auto;
+      border: 0.5px solid #000000;
+  }
+  
+  /* code box */
+  
+  .code-box {
+       background-color: #ffffff;
+     width: 80%;
+     margin: 2rem 0 2rem 2rem;
+     padding: 1rem 2rem;
+     border-left: 5px solid #15c6bd;
+  }
+  
+  /* note box */
+  
+  .note {
+      background-color: #f9f4a9;
+    width: 80%;
+    margin: 2rem 0 2rem 2rem;
+    padding: 1rem 2rem;
+    border-left: 5px solid #d1c51f;
+  }
+  
+  /* image */
+  
+  .attrib-img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 81.45px;
+    width: 672px;
+  }
+  
+  /* code indentions */
+  
+  .ind-1 {
+    text-indent: 1rem;
+  }
+  
+  .ind-2 {
+    text-indent: 2rem;
+  }
+  
+  .html-comment {
+    color: grey;
+  }
+  
+  /* media */
+  
+  @media screen and (max-width: 992px) {
+      #navbar header {
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 1rem 1rem 1rem 1rem;
+      }
+      #main-doc {
+          width: 73%;
+          margin-right: 1rem;
+      }
+  }
